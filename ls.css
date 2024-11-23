@@ -1,0 +1,317 @@
+/* General */
+html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-image: url(img/LuisF.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+header .inicio-web {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.nombre-author {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: rgb(222, 214, 214);
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav-list a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+.titular {
+
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 95px;
+    margin: 0;
+    color: white;
+    margin-top: 130px;
+    font-family: serif;
+    
+}
+
+
+.titular h2 {
+    color: #9fbbda;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.titular a {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(255, 253, 253);
+    background: #5F6F65;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.titular a:hover {
+    background: #0056b3;
+}
+
+/* Sobre mí */
+#sobre-mi {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#sobre-mi h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #18232f;
+}
+
+.cons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cons img {
+    width: 250px;
+    border-radius: 20%;
+    margin: 100px;
+}
+
+.parrafo-boton {
+    max-width: 600px;
+    text-align: justify;
+    padding: 20px;
+}
+
+/* Proyectos */
+#proyectos {
+    padding: 40px 20px;
+    text-align: center;
+    background: #eeebeb;
+}
+
+#proyectos h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #18232f;
+}
+
+.contenedor-proyectos {
+    padding: 70px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 150px;
+    
+}
+
+.proyecto {
+    width: 500px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.proyecto img {
+    
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.proyecto p {
+    padding: 10px;
+    font-weight: 600;
+}
+
+/* Servicios */
+#servicios {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#servicios h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #18232f;
+}
+
+.contenedor-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+}
+
+.servicio {
+    
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.servicio:hover {
+    
+    transform: translateY(-10px);
+    box-shadow: 10px 20px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.violeta {
+    background-color: #032716;
+}
+
+.celeste {
+    background-color: #1c6f43;
+}
+
+/* Contacto */
+#contacto {
+    
+    text-align: center;
+    background: #f9f9f9;
+}
+
+#contacto h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.redes-sociales a img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 150px;
+}
+
+footer#derechos {
+    background-color: rgb(33, 31, 31);
+    color: white;  
+    text-align: center;  
+    padding: 5px 0; 
+    position: relative;  
+    width: 100%;  
+}
+
+footer#derechos p {
+    margin-top: 50px ;  
+    font-size: 14px;
+    margin-bottom: 30px;  
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .inicio-web {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 200px;
+        border-radius: 10px;
+    }
+
+    .nav-list a {
+        padding: 10px 15px;
+    }
+
+    .menu-toggle.active + .nav-list {
+        display: flex;
+    }
+
+    .titular h1 {
+        font-size: 2rem;
+    }
+
+    .titular h2 {
+        font-size: 1.2rem;
+    }
+
+    .contenedor-proyectos {
+        flex-direction: column;
+    }
+
+    .contenedor-servicios {
+        flex-direction: column;
+    }
+
+    .proyecto,
+    .servicio {
+        width: 90%;
+    }
+
+    .parrafo-boton {
+        padding: 10px;
+    }
+}
